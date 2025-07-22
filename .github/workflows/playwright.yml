@@ -34,17 +34,4 @@ jobs:
         with:
           name: playwright-report
           path: playwright-report/
-          
-name: Meu Workflow de Testes
 
-on:
-  push:
-    branches:
-      - main
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      # outras etapas...
