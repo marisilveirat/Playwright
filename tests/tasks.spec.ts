@@ -12,7 +12,7 @@ test('Deve poder cadastrar duas tarefas', async ({ page }) => {
     await expect(page.locator('text=Ler um livro')).toBeVisible()
     await page.fill('#newTask', faker.lorem.words())
     await page.keyboard.press('Enter')
-    await page.waitForTimeout(3000)
+    await page.waitForTimeout(3000);
 });
 
 test('Selecionando a task', async ({ page }) => {
